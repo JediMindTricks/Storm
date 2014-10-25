@@ -20,8 +20,11 @@ class ViewController: UIViewController {
         
         let forecaseURL = NSURL(string: "37.8267,-122.423", relativeToURL: baseURL)
         
-        let weatherData = NSData.dataWithContentsOfURL(forecaseURL, options: nil, error: nil)
-        println(weatherData)
+        let sharedSession = NSURLSession.sharedSession()
+        let downloadTask: NSURLSessionDownloadTask = sharedSession.downloadTaskWithURL(forecaseURL, completionHandler: { (location: NSURL!, response: NSURLResponse!, error: NSError!) -> Void in
+            println(response)
+        })
+        downloadTask.resume()
     }
 
     override func didReceiveMemoryWarning() {
