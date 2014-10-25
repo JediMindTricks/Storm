@@ -59,8 +59,15 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudy-night" translatesAutoresizingMaskIntoConstraints="NO" id="2lf-4I-IJ8">
+                                <rect key="frame" x="38" y="92" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="fO6-6j-JFY"/>
+                                    <constraint firstAttribute="width" constant="60" id="xt4-5x-HdA"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alcatraz Island, CA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEL-7C-1ik">
-                                <rect key="frame" x="71" y="96" width="179" height="26"/>
+                                <rect key="frame" x="106" y="109" width="179" height="26"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -74,14 +81,16 @@
                             <constraint firstAttribute="centerX" secondItem="KTh-s5-qec" secondAttribute="centerX" constant="-0.5" id="C5a-VG-o7K"/>
                             <constraint firstItem="9NE-63-ocX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="40" id="Dy5-Jw-8bm"/>
                             <constraint firstItem="ChB-8Q-JrR" firstAttribute="top" secondItem="IBu-Xy-xYz" secondAttribute="bottom" constant="10" id="LMD-ya-zFV"/>
+                            <constraint firstItem="LEL-7C-1ik" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="89" id="NSO-qu-TMX"/>
                             <constraint firstItem="dqt-FK-uBO" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="48" id="PkJ-wg-kfH"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="QEA-Ba-C0P" secondAttribute="bottom" constant="90" id="TcT-GS-Ute"/>
-                            <constraint firstAttribute="centerX" secondItem="LEL-7C-1ik" secondAttribute="centerX" constant="-0.5" id="Zsr-Oe-YDI"/>
+                            <constraint firstItem="LEL-7C-1ik" firstAttribute="leading" secondItem="2lf-4I-IJ8" secondAttribute="trailing" constant="8" id="XB7-nm-KvZ"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="IBu-Xy-xYz" secondAttribute="bottom" constant="177" id="a77-Ou-MMU"/>
                             <constraint firstAttribute="centerX" secondItem="QEA-Ba-C0P" secondAttribute="centerX" constant="-0.5" id="dVW-i2-sr7"/>
-                            <constraint firstItem="LEL-7C-1ik" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="76" id="nOl-oY-pqR"/>
+                            <constraint firstAttribute="centerX" secondItem="LEL-7C-1ik" secondAttribute="centerX" constant="-35.5" id="gPe-z5-3es"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="9NE-63-ocX" secondAttribute="bottom" constant="177" id="r59-ie-2TU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ChB-8Q-JrR" secondAttribute="trailing" constant="36" id="srT-lq-vAM"/>
+                            <constraint firstItem="2lf-4I-IJ8" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="72" id="uK8-XE-Xc7"/>
                             <constraint firstAttribute="centerX" secondItem="h7q-Ar-Xou" secondAttribute="centerX" constant="-0.5" id="z7d-so-I9T"/>
                             <constraint firstItem="dqt-FK-uBO" firstAttribute="top" secondItem="9NE-63-ocX" secondAttribute="bottom" constant="8" id="znw-6N-IRR"/>
                         </constraints>
@@ -92,6 +101,9 @@
             <point key="canvasLocation" x="153" y="236"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cloudy-night" width="46" height="43"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
