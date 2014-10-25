@@ -72,11 +72,27 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frp-0D-vXP">
+                                <rect key="frame" x="140" y="38" width="43" height="43"/>
+                                <state key="normal" image="refresh">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="refresh" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xuK-Wt-P23"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="n1U-sb-nbg">
+                                <rect key="frame" x="150" y="50" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="degree" translatesAutoresizingMaskIntoConstraints="NO" id="4Cd-tV-1Qg">
+                                <rect key="frame" x="268" y="206" width="36" height="36"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.29019607843137252" green="0.56470588235294117" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="h7q-Ar-Xou" secondAttribute="centerY" id="1Gb-04-j0r"/>
                             <constraint firstAttribute="trailingMargin" secondItem="IBu-Xy-xYz" secondAttribute="trailing" constant="40" id="4Kl-xQ-hvO"/>
+                            <constraint firstItem="4Cd-tV-1Qg" firstAttribute="leading" secondItem="h7q-Ar-Xou" secondAttribute="trailing" constant="-18" id="8sc-x2-8lj"/>
                             <constraint firstItem="h7q-Ar-Xou" firstAttribute="top" secondItem="KTh-s5-qec" secondAttribute="bottom" constant="-17" id="9HB-FT-YwV"/>
                             <constraint firstAttribute="centerX" secondItem="KTh-s5-qec" secondAttribute="centerX" constant="-0.5" id="C5a-VG-o7K"/>
                             <constraint firstItem="9NE-63-ocX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="40" id="Dy5-Jw-8bm"/>
@@ -85,10 +101,15 @@
                             <constraint firstItem="dqt-FK-uBO" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="48" id="PkJ-wg-kfH"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="QEA-Ba-C0P" secondAttribute="bottom" constant="90" id="TcT-GS-Ute"/>
                             <constraint firstItem="LEL-7C-1ik" firstAttribute="leading" secondItem="2lf-4I-IJ8" secondAttribute="trailing" constant="8" id="XB7-nm-KvZ"/>
+                            <constraint firstItem="LEL-7C-1ik" firstAttribute="top" secondItem="frp-0D-vXP" secondAttribute="bottom" constant="28" id="Yix-4i-Nbl"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="IBu-Xy-xYz" secondAttribute="bottom" constant="177" id="a77-Ou-MMU"/>
                             <constraint firstAttribute="centerX" secondItem="QEA-Ba-C0P" secondAttribute="centerX" constant="-0.5" id="dVW-i2-sr7"/>
+                            <constraint firstItem="h7q-Ar-Xou" firstAttribute="top" secondItem="4Cd-tV-1Qg" secondAttribute="bottom" constant="-44" id="eyR-99-fDQ"/>
+                            <constraint firstItem="n1U-sb-nbg" firstAttribute="centerY" secondItem="frp-0D-vXP" secondAttribute="centerY" constant="0.5" id="fTm-xE-rTR"/>
                             <constraint firstAttribute="centerX" secondItem="LEL-7C-1ik" secondAttribute="centerX" constant="-35.5" id="gPe-z5-3es"/>
+                            <constraint firstAttribute="centerX" secondItem="frp-0D-vXP" secondAttribute="centerX" constant="-1.5" id="hLX-Xn-nxe"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="9NE-63-ocX" secondAttribute="bottom" constant="177" id="r59-ie-2TU"/>
+                            <constraint firstItem="n1U-sb-nbg" firstAttribute="centerX" secondItem="frp-0D-vXP" secondAttribute="centerX" constant="-1.5" id="sKt-s8-da6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ChB-8Q-JrR" secondAttribute="trailing" constant="36" id="srT-lq-vAM"/>
                             <constraint firstItem="2lf-4I-IJ8" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="72" id="uK8-XE-Xc7"/>
                             <constraint firstAttribute="centerX" secondItem="h7q-Ar-Xou" secondAttribute="centerX" constant="-0.5" id="z7d-so-I9T"/>
@@ -100,6 +121,8 @@
                         <outlet property="humidityLabel" destination="dqt-FK-uBO" id="Owc-pE-wyF"/>
                         <outlet property="iconView" destination="2lf-4I-IJ8" id="Mt2-l0-Zqi"/>
                         <outlet property="precipitationLabel" destination="ChB-8Q-JrR" id="QMs-3P-QU1"/>
+                        <outlet property="refreshActivityIndicator" destination="n1U-sb-nbg" id="AQs-Om-8iJ"/>
+                        <outlet property="refreshButton" destination="frp-0D-vXP" id="Ueb-Es-ZZG"/>
                         <outlet property="summaryLabel" destination="QEA-Ba-C0P" id="Jqg-Ty-cwR"/>
                         <outlet property="tempreatureLabel" destination="h7q-Ar-Xou" id="6tP-hL-dJd"/>
                     </connections>
@@ -111,6 +134,8 @@
     </scenes>
     <resources>
         <image name="cloudy-night" width="46" height="43"/>
+        <image name="degree" width="36" height="36"/>
+        <image name="refresh" width="43" height="43"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
