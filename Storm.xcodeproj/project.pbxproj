@@ -13,6 +13,7 @@
 		DF5561D419FAF4C400FA77FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5561D319FAF4C400FA77FA /* Images.xcassets */; };
 		DF5561D719FAF4C400FA77FA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF5561D519FAF4C400FA77FA /* LaunchScreen.xib */; };
 		DF5561E319FAF4C400FA77FA /* StormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5561E219FAF4C400FA77FA /* StormTests.swift */; };
+		DF5561ED19FB637600FA77FA /* Current.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5561EC19FB637500FA77FA /* Current.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		DF5561DC19FAF4C400FA77FA /* StormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF5561E119FAF4C400FA77FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF5561E219FAF4C400FA77FA /* StormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormTests.swift; sourceTree = "<group>"; };
+		DF5561EC19FB637500FA77FA /* Current.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Current.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				DF5561CC19FAF4C400FA77FA /* AppDelegate.swift */,
 				DF5561CE19FAF4C400FA77FA /* ViewController.swift */,
+				DF5561EC19FB637500FA77FA /* Current.swift */,
 				DF5561D019FAF4C400FA77FA /* Main.storyboard */,
 				DF5561D319FAF4C400FA77FA /* Images.xcassets */,
 				DF5561D519FAF4C400FA77FA /* LaunchScreen.xib */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF5561ED19FB637600FA77FA /* Current.swift in Sources */,
 				DF5561CF19FAF4C400FA77FA /* ViewController.swift in Sources */,
 				DF5561CD19FAF4C400FA77FA /* AppDelegate.swift in Sources */,
 			);
