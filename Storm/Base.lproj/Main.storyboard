@@ -95,6 +95,14 @@
                             <constraint firstItem="dqt-FK-uBO" firstAttribute="top" secondItem="9NE-63-ocX" secondAttribute="bottom" constant="8" id="znw-6N-IRR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="currentTimeLabel" destination="KTh-s5-qec" id="i8d-dH-fzw"/>
+                        <outlet property="humidityLabel" destination="dqt-FK-uBO" id="Owc-pE-wyF"/>
+                        <outlet property="iconView" destination="2lf-4I-IJ8" id="Mt2-l0-Zqi"/>
+                        <outlet property="precipitationLabel" destination="ChB-8Q-JrR" id="QMs-3P-QU1"/>
+                        <outlet property="summaryLabel" destination="QEA-Ba-C0P" id="Jqg-Ty-cwR"/>
+                        <outlet property="tempreatureLabel" destination="h7q-Ar-Xou" id="6tP-hL-dJd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
